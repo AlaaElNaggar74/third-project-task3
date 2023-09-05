@@ -1,0 +1,33 @@
+<div class="py-5">
+   
+   
+    <div class="row m-auto col-11 col-md-12 align-items-center justify-content-between mb-5">
+      <div class="col-md-5 rounded-2 py-4 ">
+        <img
+        src="https://upload.wikimedia.org/wikipedia/commons/b/b6/Image_created_with_a_mobile_phone.png"
+        class="w-100"
+        alt="Product Image"
+      />    </div>
+      <div class="col-md-6 mt-3 mt-md-0">
+        <div class="card-body">
+          <h5 class="card-title mb-2">id : {{ objProduct.id }}</h5>
+          <h5 class="card-title mb-2">name : {{ objProduct.name }}</h5>
+          <p class="card-text">
+            <span class="fw-bold">price</span>:
+            {{ objProduct.price }}
+          </p>
+          <!-- <h6 class="card-text">Price : {{ prodDetails.price | currency }}</h6> -->
+          <P>stock {{ objProduct.stock }} </P>
+          <P>DiscountPercentage {{ objProduct.discountPercentage }} </P>
+          <div class="btnx text-center">
+            <button class="btn btn-secondary me-3 px-4" (click)="back()">
+              Back
+            </button>
+          
+          </div>
+        </div>
+      </div>
+    </div>
+ 
+  </div>
+  

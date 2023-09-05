@@ -1,0 +1,29 @@
+<div class="mb-3">
+  <!-- <img src ="https://m.media-amazon.com/images/I/91G2Z-byH9L.jpg product.Image" alt="Product Image"> -->
+  <img
+    src="https://upload.wikimedia.org/wikipedia/commons/b/b6/Image_created_with_a_mobile_phone.png"
+    class="w-100"
+    alt="Product Image"
+  />
+
+ <div class="te mt-3">
+  <h3>{{ product.name }}</h3>
+  <p>Price: {{ product.price | currency : "EGP" }}</p>
+  <p>
+    Stock:
+    <span class="pe-2" [style.color]="product.stock === 0 ? 'red' : 'green'">
+      {{ product.stock === 0 ? "Out of stock" : "In stock" }}
+    </span>
+    <span [style.color]="product.stock === 0 ? 'red' : 'green'">
+      {{  product.stock }}
+    </span>
+  </p>
+
+    
+ 
+ </div>
+  <!-- <p>Created Date: {{ product.createdDate | date: 'MMMM yyyy' }}</p> -->
+  <!-- <button (click)="addToCart()">Add to Cart</button> -->
+  <button (click)="detailPage(product.id)"  class="btn btn-info">details</button>
+
+</div>
